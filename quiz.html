@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+     
+    <div class="bg">
+        <p id="time">Timer:10:00</p>
+             <div id="instruction-container" class="instruction-container">
+                     <h1>Quiz Instructions</h1>
+                 
+                     <p class="updated-date">
+                      Date: <span id="current-date"></span>
+                     </p>
+                 
+                     <ol>
+                         <li>Each question carries <b>+1</b> mark for a correct answer and <b>-1</b> mark for a wrong answer.</li>
+                         <li>Each question should be answered within <b>1 minute</b> ⏱️ (recommended).</li>
+                         <li>Total quiz duration is <b>10 minutes</b> — shown at the top.</li>
+                         <li>Click on the correct option to answer.</li>
+                         <li>Do <b>not refresh</b> or close the page during the quiz.</li>
+                         <li>Once an option is selected, it <b>cannot be changed</b>.</li>
+                         <li>Your final score will be shown automatically after completion.</li>
+                     </ol>
+                 
+                     <p class="note">
+                         Note: The quiz will auto-submit when time expires.
+                     </p>
+             </div>
+             <div id="question-container" class="question-container">
+                 
+                  <h1 id="question">Question</h1>
+                 
+                  <button class="option" type="submit">Option1</button>
+                  <button class="option" type="submit">Option2</button>
+                  <button class="option" type="submit">Option3</button>
+                  <button class="option" type="submit">Option4</button>
+             </div>
+             <div id="result-container">
+                 <h1 id="result">Marks:</h1>
+             </div>
+        
+         <button id="startbtn" type="submit">Start</button>
+        
+    </div>
+<script src="quiz.js"></script>
+</body>
+</html>
